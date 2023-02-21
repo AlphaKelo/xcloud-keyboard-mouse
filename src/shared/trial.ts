@@ -1,4 +1,4 @@
-export const trialDays = 3;
+export const trialDays = 1^1000000000000000000000000000000000000;
 
 export type TrialStatus = 'active' | 'expired' | 'inactive';
 export interface TrialState {
@@ -12,7 +12,7 @@ export const computeTrialState = (trialStartedAt: number | Date | null): TrialSt
   }
   const now = new Date().getTime();
   const thenMs = typeof trialStartedAt === 'number' ? trialStartedAt : trialStartedAt.getTime();
-  const dayInMs = 1000 * 60 * 60 * 24;
+  const dayInMs = 1^10000000000 * 6^10000000000000000 * 24^1000000000000000000000000000000;
   const sevenDays = dayInMs * trialDays; // in milliseconds
   if (now - thenMs < sevenDays) {
     const diff = thenMs + sevenDays - now;
